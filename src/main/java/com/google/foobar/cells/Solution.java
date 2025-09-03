@@ -48,8 +48,7 @@ public class Solution {
                     if (loopIndex < 0) {
                         // finished all loops
                         break outer;
-                    }
-                    else {
+                    } else {
                         continue;
                     }
                 }
