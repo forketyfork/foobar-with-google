@@ -46,14 +46,12 @@ public class Elevator {
         int dotIndex = version.indexOf('.');
         if (dotIndex == -1) {
             array[0] = Integer.parseInt(version);
-        }
-        else {
+        } else {
             array[0] = Integer.parseInt(version.substring(0, dotIndex));
             int secondDotIndex = version.indexOf('.', dotIndex + 1);
             if (secondDotIndex == -1) {
                 array[1] = Integer.parseInt(version.substring(dotIndex + 1));
-            }
-            else {
+            } else {
                 array[1] = Integer.parseInt(version.substring(dotIndex + 1, secondDotIndex));
                 array[2] = Integer.parseInt(version.substring(secondDotIndex + 1));
             }

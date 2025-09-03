@@ -57,7 +57,7 @@ public class Solution {
 
         // if there's only one absorbing state, nothing to count here, the probability is always 1
         if (r == 1) {
-            return new int[] {1, 1};
+            return new int[]{1, 1};
         }
 
         // the number of transient states
@@ -96,8 +96,7 @@ public class Solution {
             for (int j = 0; j < t; j++) {
                 if (i == j) {
                     fundamental[i][j] = Rational.ONE.add(probabilities[i][j].negate());
-                }
-                else {
+                } else {
                     fundamental[i][j] = probabilities[i][j].negate();
                 }
             }
@@ -134,11 +133,9 @@ public class Solution {
             Rational probability = absorbProbabilities[i];
             if (probability.isZero()) {
                 result[i] = 0;
-            }
-            else if (lcm == probability.denom) {
+            } else if (lcm == probability.denom) {
                 result[i] = (int) probability.num;
-            }
-            else {
+            } else {
                 result[i] = (int) (probability.num * (lcm / probability.denom));
             }
         }
@@ -200,8 +197,7 @@ public class Solution {
         Rational[][] cofactors = new Rational[size - 1][size - 1];
         if (size == 1) {
             adjoint[0][0] = Rational.ONE;
-        }
-        else {
+        } else {
             for (int i = 0; i < size; i++) {
                 getCofactors(matrix, cofactors, i, 0, size);
                 adjoint[0][i] = det(cofactors, size - 1);
@@ -286,8 +282,7 @@ public class Solution {
         public void simplify() {
             if (this.num == 0) {
                 this.denom = 0;
-            }
-            else {
+            } else {
                 long gcd = gcd(this.num, this.denom);
                 if (gcd > 1) {
                     this.num = this.num / gcd;

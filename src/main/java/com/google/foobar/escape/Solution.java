@@ -8,7 +8,7 @@ import java.util.Queue;
  */
 public class Solution {
 
-    private static final int[][] directions = new int[][] {{0, 1}, {1, 0}, {-1, 0}, {0, -1}};
+    private static final int[][] directions = new int[][]{{0, 1}, {1, 0}, {-1, 0}, {0, -1}};
 
     public static int solution(int[][] map) {
         int n = map.length;
@@ -20,7 +20,7 @@ public class Solution {
 
         Queue<int[]> queue = new ArrayDeque<>();
 
-        queue.offer(new int[] {0, 0, 0});
+        queue.offer(new int[]{0, 0, 0});
 
         int shortestPath = 1;
 
@@ -43,10 +43,9 @@ public class Solution {
                             && !visited[nextI][nextJ][brokeAWall]) {
                         visited[nextI][nextJ][brokeAWall] = true;
                         if (map[nextI][nextJ] == 0) {
-                            queue.offer(new int[] {nextI, nextJ, brokeAWall});
-                        }
-                        else if (brokeAWall == 0) {
-                            queue.offer(new int[] {nextI, nextJ, 1});
+                            queue.offer(new int[]{nextI, nextJ, brokeAWall});
+                        } else if (brokeAWall == 0) {
+                            queue.offer(new int[]{nextI, nextJ, 1});
                         }
                     }
                 }

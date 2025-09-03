@@ -1,8 +1,9 @@
 package com.google.foobar.escape;
 
-import java.util.stream.Stream;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.MethodSource;
+
+import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -18,8 +19,8 @@ class SolutionTest {
     public static Stream<Object[]> source() {
         return Stream.of(
 
-                new Object[] {
-                        new int[][] {
+                new Object[]{
+                        new int[][]{
                                 {0, 1, 1, 0},
                                 {0, 0, 0, 1},
                                 {1, 1, 0, 0},
@@ -28,8 +29,8 @@ class SolutionTest {
                         7
                 },
 
-                new Object[] {
-                        new int[][] {
+                new Object[]{
+                        new int[][]{
                                 {0, 0, 0, 0, 0, 0},
                                 {1, 1, 1, 1, 1, 0},
                                 {0, 0, 0, 0, 0, 0},
@@ -40,8 +41,8 @@ class SolutionTest {
                         11
                 },
 
-                new Object[] {
-                        new int[][] {
+                new Object[]{
+                        new int[][]{
                                 {0, 0, 0, 0, 0, 0},
                                 {1, 1, 1, 1, 1, 0},
                                 {0, 0, 0, 0, 0, 0},
@@ -52,8 +53,8 @@ class SolutionTest {
                         21
                 },
 
-                new Object[] {
-                        new int[][] {
+                new Object[]{
+                        new int[][]{
                                 {0, 0, 0, 0},
                                 {0, 0, 0, 0},
                                 {0, 0, 0, 0},
@@ -62,8 +63,8 @@ class SolutionTest {
                         7
                 },
 
-                new Object[] {
-                        new int[][] {
+                new Object[]{
+                        new int[][]{
                                 {0, 0, 0, 0, 0, 0},
                                 {0, 1, 1, 1, 1, 0},
                                 {0, 1, 0, 0, 0, 0},
@@ -74,32 +75,32 @@ class SolutionTest {
                         11
                 },
 
-                new Object[] {
-                        new int[][] {
+                new Object[]{
+                        new int[][]{
                                 {0, 0},
                                 {0, 0},
                         },
                         3
                 },
 
-                new Object[] {
-                        new int[][] {
+                new Object[]{
+                        new int[][]{
                                 {0, 1},
                                 {0, 0},
                         },
                         3
                 },
 
-                new Object[] {
-                        new int[][] {
+                new Object[]{
+                        new int[][]{
                                 {0, 1},
                                 {1, 0},
                         },
                         3
                 },
 
-                new Object[] {
-                        new int[][] {
+                new Object[]{
+                        new int[][]{
                                 {0, 0, 0},
                                 {1, 1, 1},
                                 {0, 0, 0},
@@ -107,8 +108,8 @@ class SolutionTest {
                         5
                 },
 
-                new Object[] {
-                        new int[][] {
+                new Object[]{
+                        new int[][]{
                                 {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
                                 {1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0},
                                 {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
@@ -133,8 +134,8 @@ class SolutionTest {
                         153
                 },
 
-                new Object[] {
-                        new int[][] {
+                new Object[]{
+                        new int[][]{
                                 {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
                                 {1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0},
                                 {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
